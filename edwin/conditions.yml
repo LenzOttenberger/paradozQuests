@@ -1,0 +1,3 @@
+conditions:
+  q001_active: "objective q001"
+  q001_done: "objective q001 done"

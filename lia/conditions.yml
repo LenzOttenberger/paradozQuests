@@ -1,0 +1,3 @@
+conditions:
+  q001_active: "objective paradozPackages-edwin>q001"
+  q001_done: "objective paradozPackages-edwin>q001 done"

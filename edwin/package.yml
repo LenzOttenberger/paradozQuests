@@ -1,0 +1,5 @@
+npcs:
+  Edwin: "citizens 1"
+npc_conversations: 
+  Edwin: Edwin
+items:

@@ -1,0 +1,3 @@
+actions:
+  start_q001: "objective add q001"
+  finish_q001: "give gold_apple:5"

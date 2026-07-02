@@ -1,0 +1,5 @@
+npcs:
+  Mirabel: "citizens 8"
+npc_coversations:
+  Mirabel: Mirabel
+items:

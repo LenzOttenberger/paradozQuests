@@ -1,0 +1,5 @@
+npcs:
+  Lia: "citizens 0"
+npc_conversations:
+  Lia: Lia
+items:
