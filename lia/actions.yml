@@ -1,2 +1,5 @@
 actions:
   q001_stage: "objective paradozPackages-edwin>q001 stage lia"
+   
+  start_q002: "objective add q002"
+  finish_q002: "give potion:2 bread:3"

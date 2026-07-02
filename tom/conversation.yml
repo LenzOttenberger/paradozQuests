@@ -24,3 +24,11 @@ conversations:
       q001_continue:
         text: "..."
         pointers: "q001_end"
+
+  quester: "Том"
+  first: "q002_tom"
+
+  NPC_options:
+
+    q002_tom:
+      text: "А! Ты от Лии? Всё нормально… ну… вроде бы. Хотя мне кажется, что деревня слишком тихая. Это подозрительно!"
