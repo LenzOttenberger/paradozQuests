@@ -1,31 +1,37 @@
 # Paradoz Quests
 
-Story quests for **Minecraft Paper** servers using **BetonQuest 3.0**.
+Система сюжетных квестов для сервера **Paradoz** на базе **Minecraft Paper** и **BetonQuest 3.0**.
 
-This repository contains the quest system for the **Paradoz** project. Every quest is written as a separate package to keep the project scalable and easy to maintain.
-
-## Features
-
-- 📖 Story-driven quests
-- 💬 Branching NPC dialogues
-- 🧩 Modular package structure
-- 👥 Citizens NPC integration
-- ⚡ Designed for BetonQuest 3.0
-- 📈 Easy to extend with new quests and NPCs
+Проект представляет собой набор модульных пакетов BetonQuest, каждый из которых отвечает за отдельного NPC или часть сюжетной линии. Такой подход позволяет постепенно расширять историю, не превращая конфигурацию в один огромный файл.
 
 ---
 
-## Requirements
+## О проекте
 
-- Paper
-- BetonQuest 3.0 (development build)
-- Citizens
+Основная цель проекта — создание качественной сюжетной кампании с диалогами, заданиями и постепенным развитием мира.
 
-Additional plugins may be required depending on future quests.
+При разработке особое внимание уделяется:
+
+* модульности;
+* масштабируемости;
+* читаемости конфигураций;
+* простоте добавления нового контента.
+
+Каждый NPC имеет собственный пакет, благодаря чему работа над новыми квестами практически не затрагивает уже существующие.
 
 ---
 
-## Project Structure
+## Используемые технологии
+
+* Minecraft Paper
+* BetonQuest 3.0 (Development)
+* Citizens
+
+По мере развития проекта список зависимостей может расширяться.
+
+---
+
+## Структура проекта
 
 ```
 packages/
@@ -43,58 +49,40 @@ packages/
 └── tom/
 ```
 
-Each NPC has its own package.
+Каждый пакет содержит конфигурацию одного NPC.
 
-A package usually contains:
+Стандартная структура:
 
-| File | Description |
-|------|-------------|
-| actions.yml | Quest actions |
-| conditions.yml | Dialogue and quest conditions |
-| conversation.yml | NPC conversations |
-| objectives.yml | Objectives and stages |
-| package.yml | Package registration |
-
----
-
-## Design Philosophy
-
-The project follows a modular architecture.
-
-- Every NPC manages only its own dialogue.
-- Quest progress is controlled through objectives and stages.
-- NPC packages remain independent from each other.
-- Adding new content should not require editing old conversations whenever possible.
-
-This makes the project easy to expand as the storyline grows.
+| Файл               | Назначение            |
+| ------------------ | --------------------- |
+| `actions.yml`      | действия квестов      |
+| `conditions.yml`   | условия выполнения    |
+| `conversation.yml` | диалоги NPC           |
+| `objectives.yml`   | цели и стадии квестов |
+| `package.yml`      | регистрация пакета    |
 
 ---
 
-## Current Quests
+## Архитектура
 
-| ID | Name | Status |
-|----|------|--------|
-| q001 | Welcome to Aeris | ✅ Complete |
+Проект построен по модульному принципу.
 
-More quests are currently in development.
+Каждый NPC отвечает только за собственные:
 
----
+* диалоги;
+* действия;
+* условия;
+* локальную логику.
 
-## Adding a New Quest
+Основной прогресс квестов управляется через `objectives`, благодаря чему один квест может быть распределён между несколькими NPC без создания сложных зависимостей между пакетами.
 
-1. Create or choose an NPC package.
-2. Add new dialogue to `conversation.yml`.
-3. Register actions and conditions.
-4. Create quest objectives.
-5. Connect the quest with previous progression if necessary.
-
-The repository is organized so that new quests can be added without restructuring existing ones.
+Подобная архитектура позволяет безболезненно расширять сюжет десятками новых квестов.
 
 ---
 
-## Naming Convention
+## Принципы именования
 
-Quest IDs:
+### Квесты
 
 ```
 q001
@@ -103,43 +91,82 @@ q003
 ...
 ```
 
-NPC packages:
-
-```
-edwin
-lia
-mirabel
-roy
-tom
-```
-
-Actions and conditions follow the quest ID:
+### Действия
 
 ```
 start_q001
 finish_q001
-q001_stage
+reward_q001
 ```
 
-This keeps every quest self-contained and avoids naming conflicts.
+### Условия
+
+```
+q001_active
+q001_done
+```
+
+### Стадии
+
+```
+objective q001 stage tom
+objective q001 stage lia
+```
+
+Такой стиль позволяет быстро ориентироваться даже в большом количестве конфигураций.
 
 ---
 
-## Future Plans
+## Реализованные квесты
 
-- Main storyline
-- Side quests
-- NPC schedules
-- Cutscenes
-- Timed quests
-- Reputation system
-- Hidden dialogue branches
-- World events
+| ID   | Название                 | Статус     |
+| ---- | ------------------------ | ---------- |
+| q001 | Добро пожаловать в Аэрис | ✅ Завершён |
+
+Список будет пополняться по мере разработки сюжета.
 
 ---
 
-## License
+## Добавление нового квеста
 
-This repository is intended for the Paradoz project.
+Для создания нового квеста обычно достаточно:
 
-Feel free to use it as inspiration for your own BetonQuest projects.
+1. создать необходимые действия;
+2. добавить условия;
+3. написать диалоги;
+4. описать цели (`objectives`);
+5. связать новый квест с предыдущим прогрессом.
+
+Благодаря модульной структуре уже существующие NPC практически не требуют изменений.
+
+---
+
+## Долгосрочные планы
+
+В дальнейшем планируется реализовать:
+
+* основную сюжетную кампанию;
+* побочные задания;
+* систему репутации;
+* нелинейные диалоги;
+* кат-сцены;
+* события мира;
+* ежедневные задания;
+* скрытые концовки отдельных квестов;
+* более глубокое взаимодействие между персонажами.
+
+---
+
+## Статус проекта
+
+Проект находится в активной разработке.
+
+Структура репозитория может изменяться по мере появления новых механик и развития сюжетной линии.
+
+---
+
+## Лицензия
+
+Проект разрабатывается для сервера **Paradoz**.
+
+При желании вы можете использовать структуру проекта и отдельные идеи в собственных проектах на базе BetonQuest.
