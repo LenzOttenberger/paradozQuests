@@ -39,3 +39,47 @@ conversations:
       q001_leave:
         text: "Уйти"
         pointers: "q001_more"
+########
+Lia:
+  quester: "Лия"
+  first: "q002_intro"
+
+  NPC_options:
+
+    q002_intro:
+      text: "О, ты как раз вовремя, котёнок. У нас тут снова что-то странное происходит. В деревне слишком тихо. Это хуже чем шум. Мне нужно проверить, что все жители в порядке. Поможешь?"
+      pointers: "q002_yes,q002_why"
+
+    q002_start:
+      text: "Отлично. Тогда проверь Тома, Эдвина и ещё одного жителя. Просто убедись, что с ними всё нормально."
+      actions: "start_q002"
+
+    q002_check:
+      text: "Ты уже проверил всех?"
+      conditions: "q002_active,!q002_done"
+      pointers: "q002_notyet"
+
+    q002_outro:
+      text: "Слишком спокойно… Мне это не нравится. Но раз ты говоришь, что всё нормально… я поверю тебе."
+      conditions: "q002_done"
+      pointers: "q002_end"
+
+    q002_finish:
+      text: "Ладно. Спасибо тебе, котёнок. Держи немного лекарств — на всякий случай."
+      actions: "finish_q002"
+    player_options:
+
+  q002_yes:
+    text: "Да, помогу."
+    actions: "start_q002"
+
+  q002_why:
+    text: "Почему это важно?"
+    pointers: "q002_start"
+
+  q002_notyet:
+    text: "Ещё нет."
+
+  q002_end:
+    text: "Надеюсь, ты ошибаешься."
+    pointers: "q002_finish"

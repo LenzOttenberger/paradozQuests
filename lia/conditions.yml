@@ -1,3 +1,6 @@
 conditions:
   q001_active: "objective paradozPackages-edwin>q001"
   q001_done: "objective paradozPackages-edwin>q001 done"
+
+  q002_active: "objective q002"
+  q002_done: "objective q002 done"
