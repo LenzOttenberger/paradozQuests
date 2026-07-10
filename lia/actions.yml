@@ -1,5 +1,19 @@
 actions:
   q001_stage: "objective paradozPackages-edwin>q001 stage lia"
+
+  q001_talk_1: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_1.ogg"
+  q001_talk_2: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_2.ogg"
    
-  start_q002: "objective add q002"
-  finish_q002: "give potion:2 bread:3"
+  start_q002: "objective add q002_daisy,q002_dandelion"
+  finish_q002: "give healing_potion:2 bread:3"
+  q002_daisy_done: "tag add q002_daisy_done"
+  q002_dandelion_done: "tag add q002_dandelion_done"
+  q002_take_daisy: "take daisy:8 notify"
+  q002_take_dandelion: "take dandelion:6 notify" 
+
+  q002_talk_1: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_1.ogg"
+  q002_talk_2: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_2.ogg"
+  q002_talk_3: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_3.ogg"
+  q002_talk_4: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_4.ogg"
+  q002_talk_5: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_5.ogg"
+  q002_talk_6: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_6.ogg"

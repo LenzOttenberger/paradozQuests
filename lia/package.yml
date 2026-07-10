@@ -3,3 +3,7 @@ npcs:
 npc_conversations:
   Lia: Lia
 items:
+  daisy: "simple oxeye_daisy"
+  dandelion: "simple dandelion"
+  bread: "simple bread"
+  healing_potion: "potion type:healing upgraded"

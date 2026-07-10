@@ -1,2 +1,3 @@
 objectives:
-  q002: "stage lia,tom,edwin preventCompletion"
+  q002_daisy: "pickup daisy amount:8 actions:q002_daisy_done notify"
+  q002_dandelion: "pickup dandelion amount:6 actions:q002_dandelion_done notify"
