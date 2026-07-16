@@ -1,0 +1,15 @@
+conversations:
+  Kail:
+    quester: "Кайл"
+    first: ""
+
+    NPC_options:
+      priv:
+        text: "Что-то там про спускаемся вниз"
+        pointers: "otvet,otvet2"
+
+    player_options:
+      otvet:
+        text: "Да."
+      otvet2:
+        text: "Нет."
