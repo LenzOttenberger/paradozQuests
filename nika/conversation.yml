@@ -1,7 +1,7 @@
 conversations:
   Nika:
     quester: "Ника"
-    first: ""
+    first: "default"
 
     NPC_options:
 
@@ -17,28 +17,35 @@ conversations:
       #   q003.1 - квест 3.1
       #######################
 
+      default:
+        text: "Привет!"
+
       q003.1_start:
         text: "Ты как раз вовремя! Мне нужен помощник."
         pointers: "q003.1_1"
-        actions: ""
+        actions: "q003.1_talk_1"
       q003.1_start1:
         text: "Для секретной экспедиции!"
         pointers: "q003.1_2"
-        actions: ""
+        actions: "q003.1_talk_2"
       q003.1_start2:
         text: "Пока не решила. Я где-то спрятала свои сокровища и сама забыла. Помоги мне найти."
-        actions: "start_q003.1"
+        actions: "start_q003.1,q003.1_talk_3"
+      q003.1_check:
+        text: "Нашёл сокровища? Они должны быть где-то рядом с моим домом."
+        conditions: "q003.1_active"
+        pointers: "q003.1_notyet"
       q003.1_fin:
         text: "Отлично! Теперь у меня есть всё необходимое."
         pointers: "q003.1_3"
-        actions: ""
+        actions: "q003.1_talk_4"
       q003.1_fin1:
         text: "Чтобы начать собирать новую коллекцию. "
         pointers: "q003.1_4"
-        actions: ""
+        actions: "q003.1_talk_5"
       q003.1_fin2:
         text: "Пока не решила. Дарю тебе своё сокровище. Храни очень бережно!"
-        actions: "finish_q003.1"
+        actions: "finish_q003.1,q003.1_talk_6"
 
 
 
@@ -68,3 +75,5 @@ conversations:
       q003.1_4:
         text: "Какую?"
         pointers: "q003.1_fin2"
+      q003.1_notyet:
+        text: "Ещё нет."

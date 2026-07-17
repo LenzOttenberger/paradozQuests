@@ -1,7 +1,7 @@
 conversations:
   Korvin:
     quester: "Корвин"
-    first: ""
+    first: "default"
 
     NPC_options:
 
@@ -17,18 +17,24 @@ conversations:
       #   q002.1 - квест 2.1
       #######################
 
+      default:
+        text: "Чего тебе?"
+
       q002.1_start2:
         text: "Это Лия тебя прислала?"
         pointers: "q001.2_2"
+        actions: "q002.1_talk_5"
       q002.1_fin2:
         text: "Конечно. Кто ещё. Передай ей, что я в полном порядке."
         pointers: "q002.1_3"
+        actions: "q002.1_talk_6"
       q002.1_fin3:
         text: "Не смотри на руку."
         pointers: "q002.1_4"
+        actions: "q002.1_talk_7"
       q002.1_fin4:
         text: "Нет. Просто... временно находится не в рабочем состоянии. Уходи."
-        actions: ""
+        actions: "q002.1_talk_8"
 
 
     player_options:

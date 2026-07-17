@@ -1,2 +1,29 @@
 actions:
   q001_stage: "objective paradozPackages-edwin>q001 stage roy"
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+
+  q001_talk_1: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_1.ogg"
+  q001_talk_2: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_2.ogg"
+  q001_talk_3: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_3.ogg"   
+  q001_talk_4: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_4.ogg"
+
+      ##############################################
+      #    ГЛАВА 1 Доп. 1.1
+      ##############################################
+
+      #######################
+      #   q001.1 - квест 1.1
+      #######################
+
+  q001.1_talk_1: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_1.ogg"
+  q001.1_talk_2: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_2.ogg"
+  q001.1_talk_3: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_3.ogg"
+  q001.1_talk_4: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_4.ogg"
+  q001.1_talk_5: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_5.ogg"

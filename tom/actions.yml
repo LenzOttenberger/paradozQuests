@@ -1,2 +1,24 @@
 actions:
   q001_stage: "objective paradozPackages-edwin>q001 stage tom"
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+  q001_talk_1: "command openaudiomc play @a [r=5] files:tom/q1/tom_1_1.ogg"
+  q001_talk_2: "command openaudiomc play @a [r=5] files:tom/q1/tom_1_2.ogg"
+
+      #######################
+      #    q002.1 - квест 2.1
+      #######################
+
+  q002.1_talk_1: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_1.ogg"
+  q002.1_talk_2: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_2.ogg"
+  q002.1_talk_3: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_3.ogg"
+  q002.1_talk_4: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_4.ogg"
+  q002.1_talk_5: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_5.ogg"
+  q002.1_talk_6: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_6.ogg"
+  q002.1_talk_7: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_7.ogg"

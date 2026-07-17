@@ -1,0 +1,2 @@
+actions:
+  talk: "command openaudiomc play @a [r=5] files:kayl/kayl.ogg"

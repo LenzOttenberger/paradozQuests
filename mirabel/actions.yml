@@ -1,2 +1,25 @@
 actions:
   q001_stage: "objective paradozPackages-edwin>q001 stage mirabel"
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+
+  q001_talk_1: "command openaudiomc play @a [r=5] "
+  q001_talk_2: "command openaudiomc play @a [r=5] "
+  q001_talk_3: "command openaudiomc play @a [r=5] "
+
+      #######################
+      #    q003 - квест 3.0
+      #######################
+
+  q003_talk_1: "command openaudiomc play @a [r=5] "
+  q003_talk_2: "command openaudiomc play @a [r=5] "
+  q003_talk_3: "command openaudiomc play @a [r=5] "
+  q003_talk_4: "command openaudiomc play @a [r=5] "
+  q003_talk_5: "command openaudiomc play @a [r=5] "
+  q003_talk_6: "command openaudiomc play @a [r=5] "

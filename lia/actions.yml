@@ -1,8 +1,21 @@
 actions:
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+
   q001_stage: "objective paradozPackages-edwin>q001 stage lia"
 
   q001_talk_1: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_1.ogg"
   q001_talk_2: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_2.ogg"
+
+      #######################
+      #    q002 - квест 2.0
+      #######################
    
   start_q002: "objective add q002_daisy,q002_dandelion"
   finish_q002: "give healing_potion:2 bread:3"
@@ -17,3 +30,17 @@ actions:
   q002_talk_4: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_4.ogg"
   q002_talk_5: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_5.ogg"
   q002_talk_6: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_6.ogg"
+
+      ##############################################
+      #    ГЛАВА 1 Доп. 2.1
+      ##############################################
+
+      #######################
+      #   q002.1 - квест 2.1
+      #######################
+
+  q002.1_talk_1: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_1.ogg"
+  q002.1_talk_2: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_2.ogg"
+  q002.1_talk_3: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_3.ogg"
+  q002.1_talk_4: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_4.ogg"
+

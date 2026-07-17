@@ -1,7 +1,7 @@
 conversations:
   Finn:
     quester: "Финн"
-    first: ""
+    first: "default"
 
     NPC_options:
 
@@ -16,21 +16,27 @@ conversations:
       #######################
       #   q003.2 - квест 3.2
       #######################
+      default:
+        text: "Приветик!"
 
       q003.2_start:
         text: "Кажется, я всё сломал."
         pointers: "q003.2_1"
-        actions: ""
+        actions: "q003.2_talk_1"
       q003.2_start1:
         text: "Пока не знаю, но Рой сказал, что, если я ещё раз что-нибудь взорву, буду работать только с лопатой. Собери мне 5 дубовых досок и 3 дубовых ступенки"
-        actions: "start_qq003.2"
+        actions: "start_qq003.2,q003.2_talk_2"
+      q003.2_check:
+        text: "Уже собрал материалы?"
+        conditions: "q003.2_active"
+        pointers: "q003.2_notyet"
       q003.2_fin:
         text: "Спасибо! Теперь осталось понять, что именно я ремонтирую."
         pointers: "q003.2_2"
-        actions: ""
+        actions: "q003.2_talk_3"
       q003.2_fin1:
         text: "Нет. Но материалы уже есть. Значит, половина работы сделана!"
-        actions: "finish_q003.2"
+        actions: "finish_q003.2,q003.2_talk_4"
 
 
     player_options:
@@ -53,3 +59,5 @@ conversations:
       q003.2_2:
         text: "А ты не знаешь?"
         pointers: "q003.2_fin1"
+      q003.2_notyet:
+        text: "Нет."
