@@ -9,17 +9,17 @@ actions:
       #    q001 - квест 1.0
       #######################
 
-  q001_talk_1: "command openaudiomc play @a [r=5] "
-  q001_talk_2: "command openaudiomc play @a [r=5] "
-  q001_talk_3: "command openaudiomc play @a [r=5] "
+  q001_talk_1: "command openaudiomc play @a [r=5] files:mirabel/mirabel_1_1.ogg"
+  q001_talk_2: "command openaudiomc play @a [r=5] files:mirabel/mirabel_1_2.ogg"
+  q001_talk_3: "command openaudiomc play @a [r=5] files:mirabel/mirabel_1_3.ogg"
 
       #######################
       #    q003 - квест 3.0
       #######################
 
-  q003_talk_1: "command openaudiomc play @a [r=5] "
-  q003_talk_2: "command openaudiomc play @a [r=5] "
-  q003_talk_3: "command openaudiomc play @a [r=5] "
-  q003_talk_4: "command openaudiomc play @a [r=5] "
-  q003_talk_5: "command openaudiomc play @a [r=5] "
-  q003_talk_6: "command openaudiomc play @a [r=5] "
+  q003_talk_1: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_1.ogg"
+  q003_talk_2: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_2.ogg"
+  q003_talk_3: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_3.ogg"
+  q003_talk_4: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_4.ogg"
+  q003_talk_5: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_5.ogg"
+  q003_talk_6: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_6.ogg"

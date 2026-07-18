@@ -10,7 +10,7 @@ actions:
       #######################
       #   q003.2 - квест 3.2
       #######################
-  q003.2_talk_1: "command openaudiomc play @a [r=5] files:"
-  q003.2_talk_2: "command openaudiomc play @a [r=5] files:"
-  q003.2_talk_3: "command openaudiomc play @a [r=5] files:"
-  q003.2_talk_4: "command openaudiomc play @a [r=5] files:"
+  q003.2_talk_1: "command openaudiomc play @a [r=5] files:finn/q3/finn_3_2_1.ogg"
+  q003.2_talk_2: "command openaudiomc play @a [r=5] files:finn/q3/finn_3_2_2.ogg"
+  q003.2_talk_3: "command openaudiomc play @a [r=5] files:finn/q3/finn_3_2_3.ogg"
+  q003.2_talk_4: "command openaudiomc play @a [r=5] files:finn/q3/finn_3_2_4.ogg"

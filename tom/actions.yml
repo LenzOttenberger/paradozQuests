@@ -20,5 +20,5 @@ actions:
   q002.1_talk_3: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_3.ogg"
   q002.1_talk_4: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_4.ogg"
   q002.1_talk_5: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_5.ogg"
-  q002.1_talk_6: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_6.ogg"
-  q002.1_talk_7: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_7.ogg"
+  q002.1_talk_6: "command openaudiomc play @a [r=5] files:tom/q2/toom_1.ogg"
+  q002.1_talk_7: "command openaudiomc play @a [r=5] files:tom/q2/toom_2.ogg"

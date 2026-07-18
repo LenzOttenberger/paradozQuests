@@ -11,10 +11,10 @@ actions:
       #   q001.2 - квест 1.2
       #######################
 
-  q001.2_talk_1: "command openaudiomc play @a [r=5] "
-  q001.2_talk_2: "command openaudiomc play @a [r=5] "
-  q001.2_talk_3: "command openaudiomc play @a [r=5] "
-  q001.2_talk_4: "command openaudiomc play @a [r=5] "
+  q001.2_talk_1: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_1.ogg"
+  q001.2_talk_2: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_2.ogg"
+  q001.2_talk_3: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_3.ogg"
+  q001.2_talk_4: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_4.ogg"
 
   start_q001.2: "folder q001.2_start,q001.2_active"
   q001.2_start: "objecitve add q001.2,q001.2_loc1,q001.2_loc2,q001.2_loc3"

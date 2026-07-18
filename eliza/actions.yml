@@ -10,6 +10,8 @@ actions:
       #######################
       #   q002.2 - квест 2.2
       #######################
-  q: "command openaudiomc play @a [r=5] "
+  q002.2_talk_1: "command openaudiomc play @a [r=5] files:eliza/q2/eliza_2_2_1.ogg"
+  q002.2_talk_2: "command openaudiomc play @a [r=5] files:eliza/q2/eliza_2_2_2.ogg"
+  q002.2_talk_3: "command openaudiomc play @a [r=5] files:eliza/q2/eliza_2_2_3.ogg"
 
 
