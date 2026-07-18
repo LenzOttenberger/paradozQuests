@@ -1,0 +1,6 @@
+npcs:
+  Loren: "citizens 9"
+npc_conversations:
+  Loren: Loren
+items:
+  compass: "simple compass"

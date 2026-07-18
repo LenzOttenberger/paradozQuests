@@ -1,0 +1,6 @@
+npcs:
+  Nika: "citizens 4"
+npc_conversations:
+  Nika: Nika
+items:
+  emerald: "simple emerald"

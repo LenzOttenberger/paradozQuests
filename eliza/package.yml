@@ -1,0 +1,6 @@
+npcs:
+  Eliza: "citizens 3"
+npc_conversations:
+  Eliza: Eliza
+items:
+  pie: "simple pumpkin_pie"

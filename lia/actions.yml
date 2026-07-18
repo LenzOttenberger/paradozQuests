@@ -8,7 +8,7 @@ actions:
       #    q001 - квест 1.0
       #######################
 
-  q001_stage: "objective paradozPackages-edwin>q001 stage lia"
+  q001_stage: "stage paradozPackages-edwin>q001 increase"
 
   q001_talk_1: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_1.ogg"
   q001_talk_2: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_2.ogg"

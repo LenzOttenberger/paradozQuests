@@ -1,0 +1,5 @@
+npcs:
+  Korvin: "citizens 2"
+npc_conversations:
+  Korvin: Korvin
+items:

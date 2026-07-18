@@ -1,7 +1,7 @@
 conversations:
   Loren:
     quester: "Лорен"
-    first: "default"
+    first: "q001.2_fin,q001.2_check,q001.2_start,default"
 
     NPC_options:
 
@@ -18,21 +18,23 @@ conversations:
       q001.2_start:
         text: "Не люблю просить о помощи. Но выбора нет./nРаньше я часто ходил в разведку. Теперь далеко не уйду. Нога уже не та./nУ меня остались старые метки за пределами деревни. Проверь, сохранились ли они."
         actions: "start_q001.2,q001.2_talk_1"
+        conditions: "paradozQuests-roy>q001.1_done,paradozQuests-edwin>q001_done"
       q001.2_check:
         text: "Ты сходил на разведку?"
-        conditions: "q001.2_active"
+        conditions: "q001.2_active,!q001.2_done"
         pointers: "q001.2_notyet"
       q001.2_fin:
         text: "Все на месте?"
         pointers: "q001.2_1"
         actions: "q001.2_talk_2"
+        conditions: "q001.2_active,q001.2_locs"
       q001.2_fin1:
         text: "Хорошо. Странно…"
         pointers: "q001.2_2"
         actions: "q001.2_talk_3"
       q001.2_fin2:
         text: "Привычка. Каждый раз жду, что однажды их не окажется./nСпасибо. Теперь хоть переживать не буду… Какое-то время."
-        actions: "finish_q001.2,q001.2_talk_4"
+        actions: "q001.2_inc,q001.2_talk_4"
 
     player_options:
 

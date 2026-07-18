@@ -3,3 +3,5 @@ npcs:
 npc_coversations:
   Mirabel: Mirabel
 items:
+  firework: "simple firework_rocket"
+  svin: "simple cooked_porkchop"

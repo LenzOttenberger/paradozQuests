@@ -1,3 +1,3 @@
 conditions:
-  q001_active: "objective q001"
-  q001_done: "objective q001 done"
+  q001_active: "tag q001_active"
+  q001_done: "objective q001"

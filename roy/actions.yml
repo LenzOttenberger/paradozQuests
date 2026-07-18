@@ -1,5 +1,5 @@
 actions:
-  q001_stage: "objective paradozPackages-edwin>q001 stage roy"
+  q001_stage: "stage paradozPackages-edwin>q001 increase"
 
       ############################################################################################
       #    ГЛАВА 1
@@ -27,3 +27,16 @@ actions:
   q001.1_talk_3: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_3.ogg"
   q001.1_talk_4: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_4.ogg"
   q001.1_talk_5: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_5.ogg"
+
+  start_q001.1: "folder q001.1_start,q001.1_active,q001.1_spawn_items1,q001.1_spawn_items2,q001.1_spawn_items3,q001.1_spawn_items4"
+  q001.1_start: "objective add q001.1,q001.1_pick"
+  q001.1_inc: "stage q001.1 increase"
+  q001.1_active: "tag add q001.1_active"
+  q001.1_spawn_items1: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_spawn_items2: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_spawn_items3: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_spawn_items4: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_kill_item1: 'command kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
+  qoo1.1_kill_item2: 'command /kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
+  qoo1.1_kill_item3: 'command /kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
+  qoo1.1_kill_item4: 'command /kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'

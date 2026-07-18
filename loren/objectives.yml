@@ -1,0 +1,5 @@
+objectives:
+  q001.2: "stage loc1,loc2,loc3 actions: notify"
+  q001.2_loc1: "location x;y;z;world 10 actions:q001.2_inc notify"
+  q001.2_loc2: "location x;y;z;world 10 actions:q001.2_inc notify"
+  q001.2_loc3: "location x;y;z;world 10 actions:q001.2_inc notify"

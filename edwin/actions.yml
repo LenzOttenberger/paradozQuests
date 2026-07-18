@@ -1,3 +1,5 @@
 actions:
-  start_q001: "objective add q001"
+  start_q001: "folder q001_start,q001_active"
+  q001_start: "objective add q001"
+  q001_active: "tag add q001_active"
   finish_q001: "give gold_apple:5"
