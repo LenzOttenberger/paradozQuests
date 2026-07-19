@@ -3,3 +3,24 @@ actions:
   q001_start: "objective add q001"
   q001_active: "tag add q001_active"
   finish_q001: "give gold_apple:5"
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+
+  q001_talk_1: "command openaudiomc play @a [r=5] "
+  q001_talk_2: "command openaudiomc play @a [r=5] "
+  q001_talk_3: "command openaudiomc play @a [r=5] "
+  q001_talk_4: "command openaudiomc play @a [r=5] "
+  q001_talk_5: "command openaudiomc play @a [r=5] "
+
+      #######################
+      #    q004 - квест 4.0
+      #######################
+
+  q004_talk_1: "command openaudiomc play @a [r=5] "
+  q004_talk_2: "command openaudiomc play @a [r=5] "
