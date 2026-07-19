@@ -3,4 +3,3 @@ npcs:
 npc_conversations:
   Tom: Tom
 items:
-  c: "simple c"

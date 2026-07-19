@@ -3,3 +3,6 @@ npcs:
 npc_conversations: 
   Edwin: Edwin
 items:
+  clock: "simple clock"
+  gold_apple: "simple golden_apple"
+

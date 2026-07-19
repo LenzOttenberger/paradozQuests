@@ -1,2 +1,3 @@
 actions:
   talk: "command openaudiomc play @a [r=5] files:kayl/kayl.ogg"
+  tp_down: "command mvtp @p MirSUR"

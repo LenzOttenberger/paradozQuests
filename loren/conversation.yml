@@ -27,7 +27,7 @@ conversations:
         text: "Все на месте?"
         pointers: "q001.2_1"
         actions: "q001.2_talk_2"
-        conditions: "q001.2_active,q001.2_locs"
+        conditions: "q001.2_active,q001.2_locs,!q001.2_done"
       q001.2_fin1:
         text: "Хорошо. Странно…"
         pointers: "q001.2_2"

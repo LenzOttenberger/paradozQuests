@@ -10,6 +10,15 @@ actions:
       #######################
       #   q002.2 - квест 2.2
       #######################
+
+  q002.2_start: "objective add q002.2"
+  q002.2_tulip: "objective add q002.2_tulip"
+  q002.2_cornflower: "objective add q002.2_cornflower"
+  start_q002.2: "folder q002.2_start,q002.2_tulip,q002.2_cornflower,q002.2_active"
+  q002.2_inc: "stage q002.2 increase"
+  q002.2_reward: "give pie:1 notify"
+  q002.2_active: "tag add q002.2_active"
+  
   q002.2_talk_1: "command openaudiomc play @a [r=5] files:eliza/q2/eliza_2_2_1.ogg"
   q002.2_talk_2: "command openaudiomc play @a [r=5] files:eliza/q2/eliza_2_2_2.ogg"
   q002.2_talk_3: "command openaudiomc play @a [r=5] files:eliza/q2/eliza_2_2_3.ogg"

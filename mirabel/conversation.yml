@@ -1,7 +1,7 @@
 conversations:
   Mirabel:
     quester: "Мирабель"
-    first: "q001_done,q001_active,default"
+    first: "q001_active,default"
 
     NPC_options:
 
@@ -37,10 +37,10 @@ conversations:
         actions: "q003_talk_1"
       q0033:
         text: "Ну и хорошо. Жду."
-        actions: "start_q003,q003_talk_2"
+        actions: "q003_talk_2"
       q0033_1:
         text: "Понимаю. Но книги всё равно придётся вернуть."
-        actions: "start_q003,q003_talk_3"
+        actions: "q003_talk_3"
       q003_check:
         text: "Книги у тебя?"
         conditions: "q003_active"

@@ -11,6 +11,8 @@ actions:
       #   q002.1 - квест 2.1
       #######################
 
+  q002.1_korvin: "tag add q002.1_korvin"
+
   q002.1_talk_5: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_1.ogg"
   q002.1_talk_6: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_2.ogg"
   q002.1_talk_7: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_3.ogg"

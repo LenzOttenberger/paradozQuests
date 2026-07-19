@@ -1,11 +1,13 @@
 conditions:
   q001_active: "tag q001_active"
-  q001_done: "objective paradozPackages-edwin>q001"
+  q001_done: "objective paradozQuests-edwin>q001"
 
-  q002_daisy_active: "objective q002_daisy"
-  q002_daisy_done: "tag q002_daisy_done"
-  q002_dandelion_active: "objective q002_dandelion"
-  q002_dandelion_done: "tag q002_dandelion_done"
- 
-  q002_active: "or q002_daisy_active,q002_dandelion_active"
-  q002_done: "and q002_daisy_done,q002_dandelion_done"
+  q002_daisy: "objective q002_daisy"
+  q002_dandelion: "objective q002_dandelion"
+  q002_flowers: "and q002_daisy,q002_dandelion"
+  q002_active: "tag q002_active"
+  q002_done: "objective q002"
+
+  q002.1_active: "tag q002.1_active"
+  q002.1_done: "objective q002.1"
+  q002.1_lia: "tag q002.1_lia"

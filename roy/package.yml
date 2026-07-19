@@ -3,4 +3,4 @@ npcs:
 npc_conversations:
   Roy: Roy
 items:
-  royPaper: "simple paper"
+  paper: "simple paper"

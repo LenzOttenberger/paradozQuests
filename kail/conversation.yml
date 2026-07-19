@@ -12,5 +12,6 @@ conversations:
     player_options:
       otvet:
         text: "Да."
+        actions: "tp_down"
       otvet2:
         text: "Нет."

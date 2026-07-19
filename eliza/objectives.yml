@@ -1,0 +1,4 @@
+objectives:
+  q002.2: "stage pick,eliza notify"
+  q002.2_tulip: "pickup red_tulip amount:8 actions:q002.2_inc notify"
+  q002.2_cornflower: "pickup cornflower amount:8 actions:q002.2_inc notify"

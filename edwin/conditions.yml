@@ -1,3 +1,9 @@
 conditions:
   q001_active: "tag q001_active"
   q001_done: "objective q001"
+  q004_loc1: "objective q004_loc1"
+  q004_loc2: "objective q004_loc2"
+  q004_loc3: "objective q004_loc3"
+  q004_locs: "and q004_loc1,q004_loc2,q004_loc3"
+  q004_done: "objective q004" 
+

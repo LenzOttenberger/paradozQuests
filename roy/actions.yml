@@ -1,5 +1,5 @@
 actions:
-  q001_stage: "stage paradozPackages-edwin>q001 increase"
+  q001_stage: "stage paradozQuests-edwin>q001 increase"
 
       ############################################################################################
       #    ГЛАВА 1
@@ -32,11 +32,12 @@ actions:
   q001.1_start: "objective add q001.1,q001.1_pick"
   q001.1_inc: "stage q001.1 increase"
   q001.1_active: "tag add q001.1_active"
-  q001.1_spawn_items1: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001.1_spawn_items2: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001.1_spawn_items3: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001.1_spawn_items4: 'command summon minecraft:item_frame ~ ~ ~ {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001.1_kill_item1: 'command kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
-  qoo1.1_kill_item2: 'command /kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
-  qoo1.1_kill_item3: 'command /kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
-  qoo1.1_kill_item4: 'command /kill @e[type=item_frame,x=100,y=64,z=200,distance=..1]'
+  q001.1_spawn_items1: 'command summon minecraft:item_frame 349 31 333 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_spawn_items2: 'command summon minecraft:item_frame 348 31 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_spawn_items3: 'command summon minecraft:item_frame 334 29 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_spawn_items4: 'command summon minecraft:item_frame 344 28 318 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001.1_take: "take paper:4"
+  q001.1_kill_item1: 'command kill @e[type=item_frame,x=349,y=31,z=333,distance=..1]'
+  qoo1.1_kill_item2: 'command /kill @e[type=item_frame,x=348,y=31,z=326,distance=..1]'
+  qoo1.1_kill_item3: 'command /kill @e[type=item_frame,x=334,y=29,z=326,distance=..1]'
+  qoo1.1_kill_item4: 'command /kill @e[type=item_frame,x=344,y=28,z=318,distance=..1]'

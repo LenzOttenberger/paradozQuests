@@ -1,7 +1,7 @@
 conversations:
   Roy:
     quester: "Рой"
-    first: "q001.1_fin,q001.1_check,q001.1_start,q001_done,q001_active,default"
+    first: "q001.1_fin,q001.1_check,q001.1_start,q001_active,default"
 
     NPC_options:
 
@@ -56,7 +56,7 @@ conversations:
       q001.1_fin:
         text: "Нашёл? Замечательно! Хм... Теперь вспомнил./nЭто был чертёж сарая."
         pointers: "q001.1_2"
-        actions: "q001.1_talk_3"
+        actions: "q001.1_talk_3,q001.1_take"
         conditions: "q001.1_active,q001.1_pick"
       q001.1_fin1:
         text: "Какой сарай?"
@@ -64,7 +64,7 @@ conversations:
         actions: "q001.1_talk_4"
       q001.1_fin2:
         text: "А. Его я так и не построил. Зато чертёж сохранился!/nСпасибо тебе огромное!"
-        actions: "q001.1_finish,q001.1_talk_5"
+        actions: "q001.1_talk_5,q001.1_inc"
 
 
 

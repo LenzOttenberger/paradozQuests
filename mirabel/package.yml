@@ -1,6 +1,6 @@
 npcs:
   Mirabel: "citizens 8"
-npc_coversations:
+npc_conversations:
   Mirabel: Mirabel
 items:
   firework: "simple firework_rocket"

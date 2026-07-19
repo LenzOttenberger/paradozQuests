@@ -1,0 +1,6 @@
+conditions:
+  q002.2_tulip: "objective q002.2_tulip"
+  q002.2_cornflower: "objective q002.2_cornflower"
+  q002.2_flowers: "and q002.2_tulip,q002.2_cornflower"
+  q002.2_active: "tag q002.2_active"
+  q002.2_done: "objective q002.2"

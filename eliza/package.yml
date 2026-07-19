@@ -4,3 +4,5 @@ npc_conversations:
   Eliza: Eliza
 items:
   pie: "simple pumpkin_pie"
+  red_tulip: "simple red_tulip"
+  cornflower: "simple cornflower"

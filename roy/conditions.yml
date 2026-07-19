@@ -1,6 +1,6 @@
 conditions:
   q001_active: "tag q001_active"
-  q001_done: "objective paradozPackages-edwin>q001"
+  q001_done: "objective paradozQuests-edwin>q001"
   q001.1_active: "tag q001_active"
   q001.1_pick: "objective q001.1_pick"
   q001.1_done: "objective q001.1"
