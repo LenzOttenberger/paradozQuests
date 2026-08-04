@@ -8,6 +8,6 @@ conditions:
   q002_active: "tag q002_active"
   q002_done: "objective q002"
 
-  q002.1_active: "tag q002.1_active"
-  q002.1_done: "objective q002.1"
-  q002.1_lia: "tag q002.1_lia"
+  q002_1_active: "tag q002_1_active"
+  q002_1_done: "objective q002_1"
+  q002_1_lia: "tag q002_1_lia"

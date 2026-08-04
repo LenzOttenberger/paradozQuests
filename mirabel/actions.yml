@@ -23,3 +23,19 @@ actions:
   q003_talk_4: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_4.ogg"
   q003_talk_5: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_5.ogg"
   q003_talk_6: "command openaudiomc play @a [r=5] files:mirabel/q3/mirabel_3_6.ogg"
+  
+  q003_spawn_item1: 'command summon minecraft:item_frame 349 31 333 {Invisible:1b,Facing:1b,Item:{id:"minecraft:book",count:1}}'
+  q003_spawn_item2: 'command summon minecraft:item_frame 348 31 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:book",count:1}}'
+  q003_spawn_item3: 'command summon minecraft:item_frame 334 29 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:book",count:1}}'
+  q003_kill_item1: 'command /kill @e[type=item_frame,x=349,y=31,z=333,distance=..1]'
+  q003_kill_item2: 'command /kill @e[type=item_frame,x=348,y=31,z=326,distance=..1]'
+  q003_kill_item3: 'command /kill @e[type=item_frame,x=334,y=29,z=326,distance=..1]'
+  q003_take_books: "take book:3"
+
+  start_q003: "folder q003_start,q003_active,q003_spawn_item1,q003_spawn_item2,q003_spawn_item3"
+  q003_start: "objective start q003"
+  q003_active: "tag add q003_active"
+  q003_inc: "stage q003 increase"
+
+  finish_q003: "folder q003_inc,q003_reward"
+  q003_reward: "give firework:2,svin:3"

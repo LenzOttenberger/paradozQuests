@@ -17,14 +17,18 @@ actions:
       #    q002 - квест 2.0
       #######################
  
-  start_q002: "objective add q002_daisy,q002_dandelion,q002"
+  start_q002: "folder q002_start,q002_active"
+  q002_start: "objective start q002_daisy,q002_dandelion,q002"
+  q002_active: "tag add q002_active"
   q002_inc: "stage q002 increase"
   q002_reward: "give healing_potion:2 bread:3"
   q002_take_daisy: "take daisy:8 notify"
   q002_take_dandelion: "take dandelion:6 notify" 
   q002_take: "folder q002_take_daisy,q002_take_dandelion"
-  q002.tom_start: "objective add paradozQuests-tom>q002.tom"
+  q002.tom_start: "objective start paradozQuests-tom>q002.tom"
   q002.tom_active: "tag add q002.tom_active"
+  finish_q002: "tag del q002_active"
+
 
   q002_talk_1: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_1.ogg"
   q002_talk_2: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_2.ogg"
@@ -38,18 +42,21 @@ actions:
       ##############################################
 
       #######################
-      #   q002.1 - квест 2.1
+      #   q002_1 - квест 2.1
       #######################
 
-  start_q002.1: "folder q002.1_start,q002.1_active,q002.1_lia"
-  q002.1_start: "objective add q002.1"
-  q002.1_active: "tag add q002.1_active"
-  q002.1_inc: "stage q002.1 increase"
-  q002.1_reward: "give healing_potion:2"
-  q002.1_lia: "tag add q002.1_lia"
+  start_q002_1: "folder q002_1_start,q002_1_active,q002_1_lia"
+  q002_1_start: "objective start q002_1"
+  q002_1_active: "tag add q002_1_active"
+  q002_1_inc: "stage q002_1 increase"
+  q002_1_reward: "give healing_potion:2"
+  q002_1_lia: "tag add q002_1_lia"
+  finish_q002_1: "folder q002_1_remove1,q002_1_remove2"
 
-  q002.1_talk_1: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_1.ogg"
-  q002.1_talk_2: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_2.ogg"
-  q002.1_talk_3: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_3.ogg"
-  q002.1_talk_4: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_4.ogg"
+  q002_1_remove1: "tag del q002_1_active"
+  q002_1_remove2: "tag del q002_1_lia"
 
+  q002_1_talk_1: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_1.ogg"
+  q002_1_talk_2: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_2.ogg"
+  q002_1_talk_3: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_3.ogg"
+  q002_1_talk_4: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_4.ogg"

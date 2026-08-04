@@ -1,12 +1,12 @@
 conversations:
   Lia:
     quester: "Лия"
-    first: "q002_outro,q002_check,q001_active,default"
+    first: "q001_active,default"
 
     NPC_options:
 
       ############################################################################################
-      #    ГЛАВА 1
+      #    ГЛАВА 1 q002_1_fin5,q002_1_check,q002_1_start,q002_outro,q002_check,q002_intro,
       ############################################################################################
 
       #######################
@@ -32,7 +32,7 @@ conversations:
         text: "У жены Тома опять болит спина.\nИ угадай кто уже третий раз за неделю прибегал ко мне с криками 'она умирает'?"
         pointers: "q002_why"
         actions: "q002_talk_1"
-        conditions: "paradozQuests-edwin>q001_done,paradozQuests-roy>q001.1_done,paradozQuests-loren>q001.2_done"
+        conditions: "paradozQuests-edwin>q001_done,paradozQuests-roy>q001_1_done,paradozQuests-loren>q001_2_done"
       q002_start:
         text: "Потому что ты мне поможешь. Нет, серьёзно. Я осмотрела Элизу вчера. И позавчера.\nИ позапозавчера. Она жива. Просто ей нужен отдых и некоторые лекарства."
         pointers: "q002_why2"
@@ -50,12 +50,12 @@ conversations:
         pointers: "q002_notyet"
       q002_outro:
         text: "Вижу, ты вернулся, котёнок. Надеюсь, не с пустыми руками.\nОтлично. Хоть один человек сегодня оказался полезнее Тома.\nНе говори ему, что я это сказала. Он хороший человек.\nПросто... Когда дело касается Элизы, он начинает видеть конец света в каждой царапине."
-        conditions: "q002_flowers,q002_active"
+        conditions: "q002_flowers,q002_active,!q002_done"
         pointers: "q002_end"
         actions: "q002_talk_5,q002_take"
       q002_finish:
         text: "Знаю. Именно поэтому я до сих пор его не придушила.\nСходи к Тому и скажи, чтобы он приходил за лекарством, котёнок."
-        actions: "q002_inc,q002_reward,q002.tom_start,q002.tom_active,q002_talk_6"
+        actions: "finish_q002,q002_inc,q002_reward,q002.tom_start,q002.tom_active,q002_talk_6"
 
 
       ##############################################
@@ -63,32 +63,32 @@ conversations:
       ##############################################
 
       #######################
-      #   q002.1 - квест 2.1
+      #   q002_1 - квест 2.1
       #######################
 
-      q002.1_start:
+      q002_1_start:
         text: "Мой брат опять отказывается лечиться. Человек приходит ко мне только тогда, когда уже почти разваливается."
-        pointers: "q002.1_1"
-        actions: "q002.1_talk_1"
+        pointers: "q002_1_1"
+        actions: "q002_1_talk_1"
         conditions: "q002_done,paradozQuests-tom>q002.tom_done"
-      q002.1_start1:
+      q002_1_start1:
         text: "Корвин. Найди его. И передай, что если он не придёт сам, я приду за ним лично."
-        actions: "q002.1_talk_2,start_q002.1"
-      q002.1_check:
+        actions: "q002_1_talk_2,start_q002_1"
+      q002_1_check:
         text: "Ты уже нашёл Корвина? Он где-то в переулках наверняка."
-        conditions: "q002.1_active,q002.1_lia,!q002.1_done"
-        pointers: "q002.1_not"
+        conditions: "q002_1_active,q002_1_lia,!q002_1_done"
+        pointers: "q002_1_not"
       #######################
       # Переход к Корвину и снава к Лие
       #######################
-      q002.1_fin5:
+      q002_1_fin5:
         text: "Он опять соврал?"
-        pointers: "q002.1_5"
-        actions: "q002.1_talk_3"
-        conditions: "q002.1_active,!q002.1_done,q002.1_lia,paradozQuests-korvin>q002.1_korvin"
-      q002.1_fin6:
+        pointers: "q002_1_5"
+        actions: "q002_1_talk_3"
+        conditions: "q002_1_active,!q002_1_done,q002_1_lia,paradozQuests-korvin>q002_1_korvin"
+      q002_1_fin6:
         text: "Как неожиданно. Спасибо, котёнок. Теперь моя очередь его искать."
-        actions: "q002.1_talk_4,q002.1_inc"
+        actions: "finish_q002_1,q002_1_reward,q002_1_talk_4,q002_1_inc"
 
 
 
@@ -135,14 +135,14 @@ conversations:
       ##############################################
 
       #######################
-      #   q002.1 - квест 2.1
+      #   q002_1 - квест 2.1
       #######################
 
-      q002.1_1:
+      q002_1_1:
         text: "Кто твой брат?"
-        pointers: "q002.1_start1"
-      q002.1_5:
+        pointers: "q002_1_start1"
+      q002_1_5:
         text: "Да. Кажется у него была сломана рука."
-        pointers: "q002.1_fin6"
-      q002.1_not:
+        pointers: "q002_1_fin6"
+      q002_1_not:
         text: "Ещё нет."

@@ -5,3 +5,4 @@ npc_conversations:
 items:
   firework: "simple firework_rocket"
   svin: "simple cooked_porkchop"
+  book: "simple book"

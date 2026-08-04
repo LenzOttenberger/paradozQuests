@@ -14,28 +14,28 @@ conversations:
       ##############################################
 
       #######################
-      #   q002.1 - квест 2.1
+      #   q002_1 - квест 2.1
       #######################
 
       default:
         text: "Чего тебе?"
 
-      q002.1_start2:
+      q002_1_start2:
         text: "Это Лия тебя прислала?"
-        pointers: "q001.2_2"
-        actions: "q002.1_talk_5,paradozQuests-lia>q002.1_inc"
-        conditions: "paradozQuests-lia>q002.1_active,paradozQuests-lia>q002.1_lia,!paradozQuests-lia>q002.1_done"
-      q002.1_fin2:
+        pointers: "q002_1_2"
+        actions: "q002_1_talk_5,paradozQuests-lia>q002_1_inc"
+        conditions: "paradozQuests-lia>q002_1_active,paradozQuests-lia>q002_1_lia,!paradozQuests-lia>q002_1_done"
+      q002_1_fin2:
         text: "Конечно. Кто ещё. Передай ей, что я в полном порядке."
-        pointers: "q002.1_3"
-        actions: "q002.1_talk_6"
-      q002.1_fin3:
+        pointers: "q002_1_3"
+        actions: "q002_1_talk_6"
+      q002_1_fin3:
         text: "Не смотри на руку."
-        pointers: "q002.1_4"
-        actions: "q002.1_talk_7"
-      q002.1_fin4:
+        pointers: "q002_1_4"
+        actions: "q002_1_talk_7"
+      q002_1_fin4:
         text: "Нет. Просто... временно находится не в рабочем состоянии. Уходи."
-        actions: "q002.1_talk_8,paradozQuests-lia>q002.1_inc,q002.1_korvin"
+        actions: "q002_1_talk_8,paradozQuests-lia>q002_1_inc,q002_1_korvin"
 
 
     player_options:
@@ -49,15 +49,15 @@ conversations:
       ##############################################
 
       #######################
-      #   q002.1 - квест 2.1
+      #   q002_1 - квест 2.1
       #######################
 
-      q002.1_2:
+      q002_1_2:
         text: "Да. Сказала прийти тебе к ней."
-        pointers: "q001.2_fin2"
-      q002.1_3:
+        pointers: "q002_1_fin2"
+      q002_1_3:
         text: "Что с рукой?"
-        pointers: "q001.2_fin3"
-      q002.1_4:
+        pointers: "q002_1_fin3"
+      q002_1_4:
         text: "Она сломана?"
-        pointers: "q001.2_fin4"
+        pointers: "q002_1_fin4"

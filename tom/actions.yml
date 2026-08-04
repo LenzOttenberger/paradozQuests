@@ -16,7 +16,7 @@ actions:
       #######################
 
   q002.tom_inc: "stage q002.tom increase"
-
+  finish_q002.tom: "tag del q002.tom_active"
   q002.tom_talk_1: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_1.ogg"
   q002.tom_talk_2: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_2.ogg"
   q002.tom_talk_3: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_3.ogg"
