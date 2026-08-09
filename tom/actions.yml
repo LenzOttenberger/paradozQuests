@@ -1,5 +1,5 @@
 actions:
-  q001_stage: "stage paradozQuests-edwin>q001 increase"
+  q001_stage: "stage paradozQuests-edwin>q001_talks increase"
 
       ############################################################################################
       #    ГЛАВА 1
@@ -12,15 +12,15 @@ actions:
   q001_talk_2: "command openaudiomc play @a [r=5] files:tom/q1/tom_1_2.ogg"
 
       #######################
-      #    q002.tom - квест 2.tom
+      #    q002_tom - квест 2.tom
       #######################
 
-  q002.tom_inc: "stage q002.tom increase"
-  finish_q002.tom: "tag del q002.tom_active"
-  q002.tom_talk_1: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_1.ogg"
-  q002.tom_talk_2: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_2.ogg"
-  q002.tom_talk_3: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_3.ogg"
-  q002.tom_talk_4: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_4.ogg"
-  q002.tom_talk_5: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_5.ogg"
-  q002.tom_talk_6: "command openaudiomc play @a [r=5] files:tom/q2/toom_1.ogg"
-  q002.tom_talk_7: "command openaudiomc play @a [r=5] files:tom/q2/toom_2.ogg"
+  q002_tom_inc: "stage q002_tom increase"
+  finish_q002_tom: "tag del q002_tom_active"
+  q002_tom_talk_1: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_1.ogg"
+  q002_tom_talk_2: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_2.ogg"
+  q002_tom_talk_3: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_3.ogg"
+  q002_tom_talk_4: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_4.ogg"
+  q002_tom_talk_5: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_5.ogg"
+  q002_tom_talk_6: "command openaudiomc play @a [r=5] files:tom/q2/toom_1.ogg"
+  q002_tom_talk_7: "command openaudiomc play @a [r=5] files:tom/q2/toom_2.ogg"

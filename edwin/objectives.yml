@@ -1,5 +1,6 @@
 objectives:
-  q001: "stage tom,roy,lia"
+  q001_talks: "stage tom,roy,lia actions:q001_talks_done,q001_talks_done_notify,q001_inc"
+  q001: "stage talks,edwin actions:q001_done_notify,q001_done"
   q004: "stage loc1,loc2,loc3"
   q004_loc1: "location 335;28;374;aeris 3 actions:q004_inc notify"
   q004_loc2: "location 347;30;356;aeris 3 actions:q004_inc notify"

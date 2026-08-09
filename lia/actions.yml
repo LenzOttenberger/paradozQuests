@@ -8,7 +8,7 @@ actions:
       #    q001 - квест 1.0
       #######################
 
-  q001_stage: "stage paradozQuests-edwin>q001 increase"
+  q001_stage: "stage paradozQuests-edwin>q001_talks increase"
 
   q001_talk_1: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_1.ogg"
   q001_talk_2: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_2.ogg"
@@ -25,8 +25,8 @@ actions:
   q002_take_daisy: "take daisy:8 notify"
   q002_take_dandelion: "take dandelion:6 notify" 
   q002_take: "folder q002_take_daisy,q002_take_dandelion"
-  q002.tom_start: "objective start paradozQuests-tom>q002.tom"
-  q002.tom_active: "tag add q002.tom_active"
+  q002_tom_start: "objective start paradozQuests-tom>q002_tom"
+  q002_tom_active: "tag add q002_tom_active"
   finish_q002: "tag del q002_active"
 
 

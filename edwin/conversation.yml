@@ -22,15 +22,15 @@ conversations:
         conditions: "!q001_done"
       q001_start:
         text: "Зачем? Думаю тебе станет тут не так одиноко. Ты же один?"
-        actions: "q001_start,q001_talk_2"
+        actions: "q001_start,q001_exp,q001_talk_2"
       q001_check:
         text: "Ну что? Успел поговорпить со всеми?"
         pointers: "q001_no"
-        conditions: "q001_active,!q001_done"
+        conditions: "q001_active,!q001_talks_done,!q001_done"
       q001_outro_start:
         text: "Ты достаточно быстро. Неужели Том был не разговорчив? Может просто не его день сегодня, либо опять не успел позавтракать. Мне пора идти. Работа так сказать. Так… Хммм….. ….. Вот и всё. Думаю теперь я смогу позвать тебя в любое время."
         pointers: "q001_wtf"
-        conditions: "q001_done"
+        conditions: "q001_talks_done,!q001_done,q001_active"
         actions: "finish_q001,q001_talk_3"
       q001_outro_end:
         text: "Это секрет, но потерпи чуток, тебе скоро станет легче. Зато я или кто-то из жителей сможет позвать тебя в любое время. А теперь мне точно пора бежать, часы не ждут!"
@@ -71,7 +71,7 @@ conversations:
 
       q001_good:
         text: "Хорошо!"
-        actions: "q004_start"
+        actions: "q001_start,q001_exp"
       q001_why:
         text: "Зачем мне это делать?"
         pointers: "q001_start"

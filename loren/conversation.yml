@@ -1,7 +1,7 @@
 conversations:
   Loren:
     quester: "Лорен"
-    first: "default"
+    first: "q001_2_fin,q001_2_check,q001_2_start,default"
 
     NPC_options:
 
@@ -21,20 +21,20 @@ conversations:
         conditions: "paradozQuests-roy>q001_1_done,paradozQuests-edwin>q001_done,!q001_2_done,!q001_2_active"
       q001_2_check:
         text: "Ты сходил на разведку?"
-        conditions: "q001_2_active,!q001_2_done"
+        conditions: "q001_2_active,!q001_2_locs_done,!q001_2_done"
         pointers: "q001_2_notyet"
       q001_2_fin:
         text: "Все на месте?"
         pointers: "q001_2_1"
         actions: "q001_2_talk_2"
-        conditions: "q001_2_active,q001_2_locs,!q001_2_done"
+        conditions: "q001_2_active,q001_2_locs_done,!q001_2_done"
       q001_2_fin1:
         text: "Хорошо. Странно…"
         pointers: "q001_2_2"
         actions: "q001_2_talk_3"
       q001_2_fin2:
         text: "Привычка. Каждый раз жду, что однажды их не окажется.\nСпасибо. Теперь хоть переживать не буду… Какое-то время."
-        actions: "q001_2_reward,finish_q001_2,q001_2_inc,q001_2_talk_4"
+        actions: "finish_q001_2,q001_2_talk_4"
 
     player_options:
 

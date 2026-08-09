@@ -1,5 +1,6 @@
 objectives:
-  q001_2: "stage loc1,loc2,loc3 notify"
-  q001_2_loc1: "location -546;68;-111;MirSUR 10 actions:q001_2_inc notify"
-  q001_2_loc2: "location -265;70;-416;MirSUR 10 actions:q001_2_inc notify"
-  q001_2_loc3: "location -109;68;277;MirSUR 10 actions:q001_2_inc notify"
+  q001_2: "stage locs,roy actions:q001_2_done,q001_2_notify"
+  q001_2_locs: "stage loc1,loc2,loc3 actions:q001_2_locs_notify,q001_2_inc,q001_2_locs_done"
+  q001_2_loc1: "location -546;68;-111;MirSUR 10 actions:q001_2_locs_inc,loc_notify"
+  q001_2_loc2: "location -265;70;-416;MirSUR 10 actions:q001_2_locs_inc,loc_notify"
+  q001_2_loc3: "location -109;68;277;MirSUR 10 actions:q001_2_locs_inc,loc_notify"

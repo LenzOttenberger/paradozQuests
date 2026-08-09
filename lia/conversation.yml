@@ -55,7 +55,7 @@ conversations:
         actions: "q002_talk_5,q002_take"
       q002_finish:
         text: "Знаю. Именно поэтому я до сих пор его не придушила.\nСходи к Тому и скажи, чтобы он приходил за лекарством, котёнок."
-        actions: "finish_q002,q002_inc,q002_reward,q002.tom_start,q002.tom_active,q002_talk_6"
+        actions: "finish_q002,q002_inc,q002_reward,q002_tom_start,q002_tom_active,q002_talk_6"
 
 
       ##############################################
@@ -70,7 +70,7 @@ conversations:
         text: "Мой брат опять отказывается лечиться. Человек приходит ко мне только тогда, когда уже почти разваливается."
         pointers: "q002_1_1"
         actions: "q002_1_talk_1"
-        conditions: "q002_done,paradozQuests-tom>q002.tom_done"
+        conditions: "q002_done,paradozQuests-tom>q002_tom_done"
       q002_1_start1:
         text: "Корвин. Найди его. И передай, что если он не придёт сам, я приду за ним лично."
         actions: "q002_1_talk_2,start_q002_1"

@@ -28,20 +28,21 @@ actions:
   q001_1_talk_4: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_4.ogg"
   q001_1_talk_5: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_5.ogg"
 
-  start_q001_1: "folder q001_1_start,q001_1_active,q001_1_spawn_items1,q001_1_spawn_items2,q001_1_spawn_items3,q001_1_spawn_items4"
+  start_q001_1: "folder q001_1_start,q001_1_spawn_items1,q001_1_spawn_items2,q001_1_spawn_items3,q001_1_spawn_items4"
   q001_1_start: "objective start q001_1,q001_1_pick"
   q001_1_inc: "stage q001_1 increase"
-  q001_1_active: "tag add q001_1_active"
-  q001_1_spawn_items1: 'command summon minecraft:item_frame 349 31 333 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001_1_spawn_items2: 'command summon minecraft:item_frame 348 31 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001_1_spawn_items3: 'command summon minecraft:item_frame 334 29 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
-  q001_1_spawn_items4: 'command summon minecraft:item_frame 344 28 318 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1}}'
+  q001_1_done: "tag add q001_1_done"
+  q001_1_pick: "tag add q001_1_pick"
+  q001_1_spawn_items1: 'command summon minecraft:item_frame 349 31 333 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_spawn_items2: 'command summon minecraft:item_frame 348 31 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_spawn_items3: 'command summon minecraft:item_frame 334 29 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_spawn_items4: 'command summon minecraft:item_frame 344 28 318 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
   q001_1_take: "take paper:4"
-  q001_1_kill_item1: 'command /kill @e[type=item_frame,x=349,y=31,z=333,distance=..1]'
-  q001_1_kill_item2: 'command /kill @e[type=item_frame,x=348,y=31,z=326,distance=..1]'
-  q001_1_kill_item3: 'command /kill @e[type=item_frame,x=334,y=29,z=326,distance=..1]'
-  q001_1_kill_item4: 'command /kill @e[type=item_frame,x=344,y=28,z=318,distance=..1]'
+  q001_1_kill_item1: 'command fill 349 31 333 349 31 333 air'
+  q001_1_kill_item2: 'command fill 348 31 326 348 31 326 air'
+  q001_1_kill_item3: 'command fill 334 29 326 334 29 326 air'
+  q001_1_kill_item4: 'command fill 344 28 318 344 28 318 air'
+  q001_1_notify: "notify <#22FF00>Квест 1.1 завершён io:title"
+  q001_1_pick_notify: "notify <#22FF00>Палки собраны. Поговори с Роем io:title"
 
-  finish_q001_1: "folder q001_1_remove,q001_1_reward"
-  q001_1_remove: "tag del q001_1_active"
   q001_1_reward: "give emerald:5"

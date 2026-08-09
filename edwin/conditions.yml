@@ -1,6 +1,7 @@
 conditions:
   q001_active: "objective q001"
   q001_done: "tag q001_done"
+  q001_talks_done: "tag q001_talks_done"
   q004_loc1: "objective q004_loc1"
   q004_loc2: "objective q004_loc2"
   q004_loc3: "objective q004_loc3"

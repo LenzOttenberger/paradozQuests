@@ -1,7 +1,7 @@
 conversations:
   Roy:
     quester: "Рой"
-    first: "q001_active,default"
+    first: "q001_1_fin,q001_1_check,q001_1_start,q001_active,default"
 
     NPC_options:
 
@@ -45,7 +45,7 @@ conversations:
         text: "Привет! У меня маленькая проблема. Совсем маленькая.\nНастолько маленькая, что я ищу её уже два часа. Я потерял чертёж."
         pointers: "q001_1_1"
         actions: "q001_1_talk_1"
-        conditions: "paradozQuests-edwin>q001_done"
+        conditions: "paradozQuests-edwin>q001_done,!q001_1_active,!q001_1_done"
       q001_1_start1:
         text: "Отличный вопрос! Если бы я помнил, чего именно, найти его было бы проще.\nНо точно чего-то важного. Наверное. В общем, помоги найти мои записи.\nДолжно быть 4 листа чертежей, я сегодня ходил по всей деревне и где-то оставил их."
         actions: "start_q001_1,q001_1_talk_2"
