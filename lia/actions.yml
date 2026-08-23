@@ -10,32 +10,36 @@ actions:
 
   q001_stage: "stage paradozQuests-edwin>q001_talks increase"
 
-  q001_talk_1: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_1.ogg"
-  q001_talk_2: "command openaudiomc play @a [r=5] files:lia/q1/lia_1_2.ogg"
+  q001_talk_1: "opsudo oa play @p files:lia/q1/lia_1_1.ogg"
+  q001_talk_2: "opsudo oa play @p files:lia/q1/lia_1_2.ogg"
 
       #######################
       #    q002 - квест 2.0
       #######################
  
-  start_q002: "folder q002_start,q002_active"
+  start_q002: "folder q002_start"
   q002_start: "objective start q002_daisy,q002_dandelion,q002"
-  q002_active: "tag add q002_active"
+  q002_dandelion: "tag add q002_dandelion"
+  q002_dandelion_notify: "notify <#22FF00>Одуванчики собраны io:chat"
+  q002_daisy: "tag add q002_daisy"
+  q002_daisy_notify: "notify <#22FF00>Ромашки собраны io:chat"
   q002_inc: "stage q002 increase"
+  q002_flowers_inc: "stage q002_flowers increase"
+  q002_flowers_notify: "notify <#22FF00>Цветы собраны. Поговори с Лией io:title"
   q002_reward: "give healing_potion:2 bread:3"
   q002_take_daisy: "take daisy:8 notify"
   q002_take_dandelion: "take dandelion:6 notify" 
   q002_take: "folder q002_take_daisy,q002_take_dandelion"
+  q002_tom: "folder q002_tom_start,q002_tom_start_notify"
   q002_tom_start: "objective start paradozQuests-tom>q002_tom"
-  q002_tom_active: "tag add q002_tom_active"
-  finish_q002: "tag del q002_active"
+  q002_tom_start_notify: "notify <#22FF00>Поговори с Томом io:title"
 
-
-  q002_talk_1: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_1.ogg"
-  q002_talk_2: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_2.ogg"
-  q002_talk_3: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_3.ogg"
-  q002_talk_4: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_4.ogg"
-  q002_talk_5: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_5.ogg"
-  q002_talk_6: "command openaudiomc play @a [r=5] files:lia/q2/lia_2_6.ogg"
+  q002_talk_1: "opsudo oa play @p files:lia/q2/lia_2_1.ogg"
+  q002_talk_2: "opsudo oa play @p files:lia/q2/lia_2_2.ogg"
+  q002_talk_3: "opsudo oa play @p files:lia/q2/lia_2_3.ogg"
+  q002_talk_4: "opsudo oa play @p files:lia/q2/lia_2_4.ogg"
+  q002_talk_5: "opsudo oa play @p files:lia/q2/lia_2_5.ogg"
+  q002_talk_6: "opsudo oa play @p files:lia/q2/lia_2_6.ogg"
 
       ##############################################
       #    ГЛАВА 1 Доп. 2.1
@@ -56,7 +60,7 @@ actions:
   q002_1_remove1: "tag del q002_1_active"
   q002_1_remove2: "tag del q002_1_lia"
 
-  q002_1_talk_1: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_1.ogg"
-  q002_1_talk_2: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_2.ogg"
-  q002_1_talk_3: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_3.ogg"
-  q002_1_talk_4: "command openaudiomc play @a [r=5] files:lia/q21/lia_2_1_4.ogg"
+  q002_1_talk_1: "opsudo oa play @p files:lia/q21/lia_2_1_1.ogg"
+  q002_1_talk_2: "opsudo oa play @p files:lia/q21/lia_2_1_2.ogg"
+  q002_1_talk_3: "opsudo oa play @p files:lia/q21/lia_2_1_3.ogg"
+  q002_1_talk_4: "opsudo oa play @p files:lia/q21/lia_2_1_4.ogg"

@@ -1,8 +1,8 @@
 conversations:
   Roy:
     quester: "Рой"
-    first: "q001_1_fin,q001_1_check,q001_1_start,q001_active,default"
-
+    first: "q001_active,default"
+    #q001_1_fin,q001_1_check,q001_1_start
     NPC_options:
 
       ############################################################################################

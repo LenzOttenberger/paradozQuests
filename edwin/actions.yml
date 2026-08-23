@@ -22,18 +22,18 @@ actions:
       #    q001 - квест 1.0
       #######################
 
-  q001_talk_1: "command openaudiomc play @a [r=5] files:edwin/q1/1.ogg"
-  q001_talk_2: "command openaudiomc play @a [r=5] files:edwin/q1/2.ogg"
-  q001_talk_3: "command openaudiomc play @a [r=5] files:edwin/q1/3.ogg"
-  q001_talk_4: "command openaudiomc play @a [r=5] files:edwin/q1/4.ogg"
+  q001_talk_1: "opsudo oa play @p files:edwin/q1/1.ogg"
+  q001_talk_2: "opsudo oa play @p files:edwin/q1/2.ogg"
+  q001_talk_3: "opsudo oa play @p files:edwin/q1/3.ogg"
+  q001_talk_4: "opsudo oa play @p files:edwin/q1/4.ogg"
 
       #######################
       #    q004 - квест 4.0
       #######################
 
-  q004_talk_1: "command openaudiomc play @a [r=5] files:edwin/q4/1.ogg"
-  q004_talk_2: "command openaudiomc play @a [r=5] files:edwin/q4/2.ogg"
-  q004_talk_3: "command openaudiomc play @a [r=5] files:edwin/q4/3.ogg"
+  q004_talk_1: "opsudo oa play @p files:edwin/q4/1.ogg"
+  q004_talk_2: "opsudo oa play @p files:edwin/q4/2.ogg"
+  q004_talk_3: "opsudo oa play @p files:edwin/q4/3.ogg"
 
   q004_inc: "stage q004 increase"
   q004_reward: "give clock notify"

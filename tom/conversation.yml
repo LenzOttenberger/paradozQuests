@@ -1,7 +1,7 @@
 conversations:
   Tom:
     quester: "Том"
-    first: "q001_active,default"
+    first: "q002_tom,q001_active,default"
 
     NPC_options:
 
@@ -30,7 +30,7 @@ conversations:
       q002_tom:
         text: "Привет, храбрый герой!\nЕсли ты пришёл поработать, то я уже придумал для тебя ещё одно задание!\nХотя... Подожди. Ты пришёл от Лии?"
         pointers: "q002_1"
-        actions: "q002_tom_talk_1,q002_tom_inc"
+        actions: "q002_tom_talk_1"
         conditions: "q002_tom_active,!q002_tom_done"
       q002_gde:
         text: "Правда? Она наконец приготовила лекарство?\nОтлично! Я уже начал переживать. Ну... И где оно?"

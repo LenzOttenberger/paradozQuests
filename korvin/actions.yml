@@ -13,7 +13,7 @@ actions:
 
   q002_1_korvin: "tag add q002_1_korvin"
 
-  q002_1_talk_5: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_1.ogg"
-  q002_1_talk_6: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_2.ogg"
-  q002_1_talk_7: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_3.ogg"
-  q002_1_talk_8: "command openaudiomc play @a [r=5] files:korvin/q21/korvin_1_4.ogg"
+  q002_1_talk_5: "opsudo oa play @p files:korvin/q21/korvin_1_1.ogg"
+  q002_1_talk_6: "opsudo oa play @p files:korvin/q21/korvin_1_2.ogg"
+  q002_1_talk_7: "opsudo oa play @p files:korvin/q21/korvin_1_3.ogg"
+  q002_1_talk_8: "opsudo oa play @p files:korvin/q21/korvin_1_4.ogg"

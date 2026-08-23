@@ -1,8 +1,8 @@
 conversations:
   Loren:
     quester: "Лорен"
-    first: "q001_2_fin,q001_2_check,q001_2_start,default"
-
+    first: "default"
+    #q001_2_fin,q001_2_check,q001_2_start
     NPC_options:
 
       ##############################################

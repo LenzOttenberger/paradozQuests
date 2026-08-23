@@ -8,19 +8,21 @@ actions:
       #######################
       #    q001 - квест 1.0
       #######################
-  q001_talk_1: "command openaudiomc play @a [r=5] files:tom/q1/tom_1_1.ogg"
-  q001_talk_2: "command openaudiomc play @a [r=5] files:tom/q1/tom_1_2.ogg"
+  q001_talk_1: "opsudo oa play @p files:tom/q1/tom_1_1.ogg"
+  q001_talk_2: "opsudo oa play @p files:tom/q1/tom_1_2.ogg"
 
       #######################
       #    q002_tom - квест 2.tom
       #######################
 
   q002_tom_inc: "stage q002_tom increase"
+  q002_tom_done: "tag add q002_done"
   finish_q002_tom: "tag del q002_tom_active"
-  q002_tom_talk_1: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_1.ogg"
-  q002_tom_talk_2: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_2.ogg"
-  q002_tom_talk_3: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_3.ogg"
-  q002_tom_talk_4: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_4.ogg"
-  q002_tom_talk_5: "command openaudiomc play @a [r=5] files:tom/q2/tom_2_5.ogg"
-  q002_tom_talk_6: "command openaudiomc play @a [r=5] files:tom/q2/toom_1.ogg"
-  q002_tom_talk_7: "command openaudiomc play @a [r=5] files:tom/q2/toom_2.ogg"
+  q002_tom_done_notify: "notify <#22FF00>Квест 2 завершёни io:title"
+  q002_tom_talk_1: "opsudo oa play @p files:tom/q2/tom_2_1.ogg"
+  q002_tom_talk_2: "opsudo oa play @p files:tom/q2/tom_2_2.ogg"
+  q002_tom_talk_3: "opsudo oa play @p files:tom/q2/tom_2_3.ogg"
+  q002_tom_talk_4: "opsudo oa play @p files:tom/q2/tom_2_4.ogg"
+  q002_tom_talk_5: "opsudo oa play @p files:tom/q2/tom_2_5.ogg"
+  q002_tom_talk_6: "opsudo oa play @p files:tom/q2/toom_1.ogg"
+  q002_tom_talk_7: "opsudo oa play @p files:tom/q2/toom_2.ogg"

@@ -2,7 +2,7 @@ conversations:
   Lia:
     quester: "Лия"
     first: "q001_active,default"
-
+    #q002_outro,q002_check,q002_intro
     NPC_options:
 
       ############################################################################################
@@ -32,7 +32,7 @@ conversations:
         text: "У жены Тома опять болит спина.\nИ угадай кто уже третий раз за неделю прибегал ко мне с криками 'она умирает'?"
         pointers: "q002_why"
         actions: "q002_talk_1"
-        conditions: "paradozQuests-edwin>q001_done,paradozQuests-roy>q001_1_done,paradozQuests-loren>q001_2_done"
+        conditions: "paradozQuests-edwin>q001_done,paradozQuests-roy>q001_1_done,paradozQuests-loren>q001_2_done,!q002_active,!q002_done"
       q002_start:
         text: "Потому что ты мне поможешь. Нет, серьёзно. Я осмотрела Элизу вчера. И позавчера.\nИ позапозавчера. Она жива. Просто ей нужен отдых и некоторые лекарства."
         pointers: "q002_why2"
@@ -55,7 +55,7 @@ conversations:
         actions: "q002_talk_5,q002_take"
       q002_finish:
         text: "Знаю. Именно поэтому я до сих пор его не придушила.\nСходи к Тому и скажи, чтобы он приходил за лекарством, котёнок."
-        actions: "finish_q002,q002_inc,q002_reward,q002_tom_start,q002_tom_active,q002_talk_6"
+        actions: "q002_reward,q002_tom,q002_inc,q002_talk_6"
 
 
       ##############################################

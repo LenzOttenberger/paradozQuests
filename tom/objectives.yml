@@ -1,2 +1,2 @@
 objectives:
-  q002_tom: "stage tom notify"
+  q002_tom: "stage tom actions:q002_tom_done_notify"

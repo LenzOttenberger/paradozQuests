@@ -10,9 +10,9 @@
       #######################
       #   q003.1 - квест 3.1
       #######################
-  q003.1_talk_1: "command openaudiomc play @a [r=5] files:nika/q31/nika_3_1_1.ogg"
-  q003.1_talk_2: "command openaudiomc play @a [r=5] files:nika/q31/nika_3_1_2.ogg"
-  q003.1_talk_3: "command openaudiomc play @a [r=5] files:nika/q31/nika_3_1_3.ogg"
-  q003.1_talk_4: "command openaudiomc play @a [r=5] files:nika/q31/nika_3_1_4.ogg"
-  q003.1_talk_5: "command openaudiomc play @a [r=5] files:nika/q31/nika_3_1_5.ogg"
-  q003.1_talk_6: "command openaudiomc play @a [r=5] files:nika/q31/nika_3_1_6.ogg"
+  q003.1_talk_1: "opsudo oa play @p files:nika/q31/nika_3_1_1.ogg"
+  q003.1_talk_2: "opsudo oa play @p files:nika/q31/nika_3_1_2.ogg"
+  q003.1_talk_3: "opsudo oa play @p files:nika/q31/nika_3_1_3.ogg"
+  q003.1_talk_4: "opsudo oa play @p files:nika/q31/nika_3_1_4.ogg"
+  q003.1_talk_5: "opsudo oa play @p files:nika/q31/nika_3_1_5.ogg"
+  q003.1_talk_6: "opsudo oa play @p files:nika/q31/nika_3_1_6.ogg"

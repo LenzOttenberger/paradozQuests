@@ -9,10 +9,10 @@ actions:
       #    q001 - квест 1.0
       #######################
 
-  q001_talk_1: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_1.ogg"
-  q001_talk_2: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_2.ogg"
-  q001_talk_3: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_3.ogg"   
-  q001_talk_4: "command openaudiomc play @a [r=5] files:roy/q11/roy_1_1_4.ogg"
+  q001_talk_1: "opsudo oa play @p files:roy/q11/roy_1_1_1.ogg"
+  q001_talk_2: "opsudo oa play @p files:roy/q11/roy_1_1_2.ogg"
+  q001_talk_3: "opsudo oa play @p files:roy/q11/roy_1_1_3.ogg"   
+  q001_talk_4: "opsudo oa play @p files:roy/q11/roy_1_1_4.ogg"
 
       ##############################################
       #    ГЛАВА 1 Доп. 1.1
@@ -22,11 +22,11 @@ actions:
       #   q001_1 - квест 1.1
       #######################
 
-  q001_1_talk_1: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_1.ogg"
-  q001_1_talk_2: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_2.ogg"
-  q001_1_talk_3: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_3.ogg"
-  q001_1_talk_4: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_4.ogg"
-  q001_1_talk_5: "command openaudiomc play @a [r=5] files:roy/q111/roy_1_1_1_5.ogg"
+  q001_1_talk_1: "opsudo oa play @p files:roy/q111/roy_1_1_1_1.ogg"
+  q001_1_talk_2: "opsudo oa play @p files:roy/q111/roy_1_1_1_2.ogg"
+  q001_1_talk_3: "opsudo oa play @p files:roy/q111/roy_1_1_1_3.ogg"
+  q001_1_talk_4: "opsudo oa play @p files:roy/q111/roy_1_1_1_4.ogg"
+  q001_1_talk_5: "opsudo oa play @p files:roy/q111/roy_1_1_1_5.ogg"
 
   start_q001_1: "folder q001_1_start,q001_1_spawn_items1,q001_1_spawn_items2,q001_1_spawn_items3,q001_1_spawn_items4"
   q001_1_start: "objective start q001_1,q001_1_pick"
@@ -43,6 +43,6 @@ actions:
   q001_1_kill_item3: 'command fill 334 29 326 334 29 326 air'
   q001_1_kill_item4: 'command fill 344 28 318 344 28 318 air'
   q001_1_notify: "notify <#22FF00>Квест 1.1 завершён io:title"
-  q001_1_pick_notify: "notify <#22FF00>Палки собраны. Поговори с Роем io:title"
+  q001_1_pick_notify: "notify <#22FF00>Чертежи собраны. Поговори с Роем io:title"
 
   q001_1_reward: "give emerald:5"

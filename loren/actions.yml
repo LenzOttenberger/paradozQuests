@@ -11,10 +11,10 @@ actions:
       #   q001_2 - квест 1.2
       #######################
 
-  q001_2_talk_1: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_1.ogg"
-  q001_2_talk_2: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_2.ogg"
-  q001_2_talk_3: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_3.ogg"
-  q001_2_talk_4: "command openaudiomc play @a [r=5] files:loren/q1_2/loren_1_2_4.ogg"
+  q001_2_talk_1: "opsudo oa play @p files:loren/q1_2/loren_1_2_1.ogg"
+  q001_2_talk_2: "opsudo oa play @p files:loren/q1_2/loren_1_2_2.ogg"
+  q001_2_talk_3: "opsudo oa play @p files:loren/q1_2/loren_1_2_3.ogg"
+  q001_2_talk_4: "opsudo oa play @p files:loren/q1_2/loren_1_2_4.ogg"
 
   start_q001_2: "folder q001_2_start,q001_2_give"
   q001_2_start: "objective start q001_2,q001_2_loc1,q001_2_loc2,q001_2_loc3,q001_2_locs"
