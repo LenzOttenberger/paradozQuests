@@ -1,0 +1,6 @@
+npcs:
+  Finn: "citizens 5"
+npc_conversations:
+  Finn: Finn
+items:
+  axe: "simple netherite_axe"

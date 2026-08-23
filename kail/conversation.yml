@@ -1,0 +1,17 @@
+conversations:
+  Kail:
+    quester: "Кайл"
+    first: "priv"
+
+    NPC_options:
+      priv:
+        text: "Привет. Могу спустить тебя вниз. Скажи если нужно."
+        pointers: "otvet,otvet2"
+        actions: "talk"
+
+    player_options:
+      otvet:
+        text: "Да."
+        actions: "tp_down"
+      otvet2:
+        text: "Нет."

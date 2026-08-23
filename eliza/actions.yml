@@ -1,0 +1,31 @@
+actions: 
+      ############################################################################################
+      #       ГЛАВА 1
+      ############################################################################################
+
+      ##############################################
+      #    ГЛАВА 1 Доп. 2.2
+      ##############################################
+
+      #######################
+      #   q002_2 - квест 2.2
+      #######################
+
+  q002_2_start: "objective add q002_2"
+  q002_2_tulip: "objective add q002_2_tulip"
+  q002_2_cornflower: "objective add q002_2_cornflower"
+  start_q002_2: "folder q002_2_start,q002_2_tulip,q002_2_cornflower,q002_2_active"
+  q002_2_inc: "stage q002_2 increase"
+  q002_2_reward: "give pie:1 notify"
+  q002_2_active: "tag add q002_2_active"
+  finish_q002_2: "tag del q002_2_active"
+
+  q002_2_take_tulip: "take red_tulip:8 notify"
+  q002_2_take_cornflower: "take cornflower:8 notify"
+  q002_2_take: "folder q002_2_take_tulip,q002_2_take_cornflower"
+  
+  q002_2_talk_1: "opsudo oa play @p files:eliza/q2/eliza_2_2_1.ogg"
+  q002_2_talk_2: "opsudo oa play @p files:eliza/q2/eliza_2_2_2.ogg"
+  q002_2_talk_3: "opsudo oa play @p files:eliza/q2/eliza_2_2_3.ogg"
+
+

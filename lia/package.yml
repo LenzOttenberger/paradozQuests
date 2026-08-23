@@ -6,4 +6,4 @@ items:
   daisy: "simple oxeye_daisy"
   dandelion: "simple dandelion"
   bread: "simple bread"
-  healing_potion: "potion type:healing upgraded"
+  healing_potion: simple potion "type:HEALING" "upgraded:true"

@@ -1,2 +1,48 @@
 actions:
-  q001_stage: "objective paradozPackages-edwin>q001 stage roy"
+  q001_stage: "stage paradozQuests-edwin>q001 increase"
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+
+  q001_talk_1: "opsudo oa play @p files:roy/q11/roy_1_1_1.ogg"
+  q001_talk_2: "opsudo oa play @p files:roy/q11/roy_1_1_2.ogg"
+  q001_talk_3: "opsudo oa play @p files:roy/q11/roy_1_1_3.ogg"   
+  q001_talk_4: "opsudo oa play @p files:roy/q11/roy_1_1_4.ogg"
+
+      ##############################################
+      #    ГЛАВА 1 Доп. 1.1
+      ##############################################
+
+      #######################
+      #   q001_1 - квест 1.1
+      #######################
+
+  q001_1_talk_1: "opsudo oa play @p files:roy/q111/roy_1_1_1_1.ogg"
+  q001_1_talk_2: "opsudo oa play @p files:roy/q111/roy_1_1_1_2.ogg"
+  q001_1_talk_3: "opsudo oa play @p files:roy/q111/roy_1_1_1_3.ogg"
+  q001_1_talk_4: "opsudo oa play @p files:roy/q111/roy_1_1_1_4.ogg"
+  q001_1_talk_5: "opsudo oa play @p files:roy/q111/roy_1_1_1_5.ogg"
+
+  start_q001_1: "folder q001_1_start,q001_1_spawn_items1,q001_1_spawn_items2,q001_1_spawn_items3,q001_1_spawn_items4"
+  q001_1_start: "objective start q001_1,q001_1_pick"
+  q001_1_inc: "stage q001_1 increase"
+  q001_1_done: "tag add q001_1_done"
+  q001_1_pick: "tag add q001_1_pick"
+  q001_1_spawn_items1: 'command summon minecraft:item_frame 349 31 333 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_spawn_items2: 'command summon minecraft:item_frame 348 31 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_spawn_items3: 'command summon minecraft:item_frame 334 29 326 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_spawn_items4: 'command summon minecraft:item_frame 344 28 318 {Invisible:1b,Facing:1b,Item:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":"Чертёж Роя"}}}'
+  q001_1_take: "take paper:4"
+  q001_1_kill_item1: 'command fill 349 31 333 349 31 333 air'
+  q001_1_kill_item2: 'command fill 348 31 326 348 31 326 air'
+  q001_1_kill_item3: 'command fill 334 29 326 334 29 326 air'
+  q001_1_kill_item4: 'command fill 344 28 318 344 28 318 air'
+  q001_1_notify: "notify <#22FF00>Квест 1.1 завершён io:title"
+  q001_1_pick_notify: "notify <#22FF00>Чертежи собраны. Поговори с Роем io:title"
+
+  q001_1_reward: "give emerald:5"

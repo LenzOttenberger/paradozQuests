@@ -1,0 +1,3 @@
+objectives:
+  q003: "stage pick"
+  q003_pick: "pickup book amount:3 actions:q003_kill_item1,q003_kill_item2,q003_kill_item3,q003_inc notify"

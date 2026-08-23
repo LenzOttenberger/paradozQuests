@@ -1,0 +1,30 @@
+actions: 
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      ##############################################
+      #    ГЛАВА 1 Доп. 1.2
+      ##############################################
+
+      #######################
+      #   q001_2 - квест 1.2
+      #######################
+
+  q001_2_talk_1: "opsudo oa play @p files:loren/q1_2/loren_1_2_1.ogg"
+  q001_2_talk_2: "opsudo oa play @p files:loren/q1_2/loren_1_2_2.ogg"
+  q001_2_talk_3: "opsudo oa play @p files:loren/q1_2/loren_1_2_3.ogg"
+  q001_2_talk_4: "opsudo oa play @p files:loren/q1_2/loren_1_2_4.ogg"
+
+  start_q001_2: "folder q001_2_start,q001_2_give"
+  q001_2_start: "objective start q001_2,q001_2_loc1,q001_2_loc2,q001_2_loc3,q001_2_locs"
+  q001_2_done: "tag add q001_2_done"
+  q001_2_inc: "stage q001_2 increase"
+  q001_2_locs_inc: "stage q001_2_locs increase"
+  q001_2_reward: "give compass:1"
+  q001_2_locs_notify: "notify <#22FF00>Отлично. Лорен ждёт тебя io:title"
+  q001_2_notify: "notify <#22FF00>Квест 1.2 завершён io:title"
+  loc_notify: "notify <#22FF00>Метка найдена io:chat"
+  q001_2_locs_done: "tag add q001_2_locs_done"
+  finish_q001_2: "folder q001_2_reward,q001_2_inc"
+  q001_2_give: "give cord_paper"

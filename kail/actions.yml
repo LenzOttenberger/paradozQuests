@@ -1,0 +1,3 @@
+actions:
+  talk: "opsudo oa play @p files:kayl/kayl.ogg"
+  tp_down: "command mvtp @p MirSUR"

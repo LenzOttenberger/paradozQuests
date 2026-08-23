@@ -1,3 +1,43 @@
 actions:
-  start_q001: "objective add q001"
-  finish_q001: "give gold_apple:5"
+  q001_start: " folder st_q001,st_q001_talks"
+  st_q001: "objective start q001"
+  st_q001_talks: "objective start q001_talks"
+  q001_done: "tag add q001_done"
+  q001_talks_done: "tag add q001_talks_done"
+  q001_inc: "stage q001 increase"
+  q001_done_notify: "notify <#22FF00>Квест 1 завершён io:title"
+  q001_talks_done_notify: "notify Отличная работа. Пообщайтесь с Эдвином. io:title"
+  finish_q001: "folder q001_nausea,q001_blindness,q001_reward,q001_inc"
+  q001_exp: "notify <#22FF00>Поговори с Лией, Мирабелью и Томом io:chat"
+  q001_nausea: "effect NAUSEA 30 1 ambient noicon"
+  q001_blindness: "effect BLINDNESS 30 1 ambient noicon"
+  q001_reward: "give gold_apple:5"
+
+
+      ############################################################################################
+      #    ГЛАВА 1
+      ############################################################################################
+
+      #######################
+      #    q001 - квест 1.0
+      #######################
+
+  q001_talk_1: "opsudo oa play @p files:edwin/q1/1.ogg"
+  q001_talk_2: "opsudo oa play @p files:edwin/q1/2.ogg"
+  q001_talk_3: "opsudo oa play @p files:edwin/q1/3.ogg"
+  q001_talk_4: "opsudo oa play @p files:edwin/q1/4.ogg"
+
+      #######################
+      #    q004 - квест 4.0
+      #######################
+
+  q004_talk_1: "opsudo oa play @p files:edwin/q4/1.ogg"
+  q004_talk_2: "opsudo oa play @p files:edwin/q4/2.ogg"
+  q004_talk_3: "opsudo oa play @p files:edwin/q4/3.ogg"
+
+  q004_inc: "stage q004 increase"
+  q004_reward: "give clock notify"
+  q004_start: "objective start q004"
+  q004_done: "tag add q004_done"
+  finish_q004: "folder q004_done,q004_reward"
+

@@ -1,3 +1,7 @@
 objectives:
-  q002_daisy: "pickup daisy amount:8 actions:q002_daisy_done notify"
-  q002_dandelion: "pickup dandelion amount:6 actions:q002_dandelion_done notify"
+  q001: "stage tom,roy,lia"
+  q002: "stage flowers,tom"
+  q002_flowers: "stage daisy,dandelion actions:q002_flowers_notify,q002_inc"
+  q002_daisy: "pickup daisy amount:8 actions:q002_flowers_inc,q002_daisy,q002_daisy_notify"
+  q002_dandelion: "pickup dandelion amount:6 actions:q002_flowers_inc,q002_dandelion,q002_dandelion_notify"
+  q002_1: "stage korvin,lia notify"

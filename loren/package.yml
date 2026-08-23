@@ -1,0 +1,7 @@
+npcs:
+  Loren: "citizens 9"
+npc_conversations:
+  Loren: Loren
+items:
+  compass: "simple compass"
+  cord_paper: simple paper "name:Потрёпанная записка с координатами" "lore:-546 68 -111 | -265 70 -416 | -109 68 277"

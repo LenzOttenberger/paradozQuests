@@ -1,7 +1,6 @@
 npcs:
-  Roy: "citizens 7"
+  Nika: "citizens 4"
 npc_conversations:
-  Roy: Roy
+  Nika: Nika
 items:
-  paper: "simple paper"
   emerald: "simple emerald"
